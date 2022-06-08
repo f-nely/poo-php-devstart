@@ -35,6 +35,16 @@ class Usuario
         $this->email = $email;
     }
 
+    public function obterSenha(): string
+    {
+        return $this->senha;
+    }
+
+    public function definirSenha(string $senha): void
+    {
+        $this->senha = $senha;
+    }
+
     public function obterCpf(): string
     {
         return $this->cpf;
