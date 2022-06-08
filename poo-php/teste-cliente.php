@@ -7,7 +7,7 @@ include 'Gestor.php';
 $cliente = new Cliente('taylor@email.com', '3030fa');
 $cliente->definirNome('Taylor');
 
-$gestor = new Gestor('anne@email.com', '1990as');
+$gestor = new Gestor('anne@email.com', '1990as', 6000);
 $gestor->definirNome('Anne');
 
 var_dump($cliente, $gestor);
