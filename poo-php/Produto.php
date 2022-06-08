@@ -2,16 +2,20 @@
 
 declare(strict_types=1);
 
+include 'Categoria.php';
+
 class Produto
 {
     private string $nome;
     private float $valor;
     private string $descricao;
+    private readonly Categoria $categoria; // readonly somente PHP 8.1
 
-    public function __construct(string $nome, float $valor)
+    public function __construct(string $nome, float $valor, Categoria $categoria)
     {
         $this->nome = $nome;
         $this->valor = $valor;
+        $this->categoria = $categoria;
         $this->definirValor($valor);
     }
 
