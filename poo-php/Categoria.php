@@ -11,13 +11,24 @@ class Categoria
     ) {
 
     }
-    
-    // private string $nome;
-    // private string $descricao;
 
-    // public function __construct(string $nome, string $descricao)
-    // {
-    //     $this->nome = $nome;
-    //     $this->descricao = $descricao;
-    // }
+    public function obterNome(): string
+    {
+        return $this->nome;
+    }
+
+    public function definirNome(string $nome): void
+    {
+        $this->nome = $nome;
+    }
+    
+    public function obterDescricao(): string
+    {
+        return $this->descricao;
+    }
+
+    public function definirDescricao(string $descricao): void
+    {
+        $this->descricao = $descricao;
+    }
 }
